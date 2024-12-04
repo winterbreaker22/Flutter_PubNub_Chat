@@ -1,6 +1,6 @@
 {
-    "name": "flutter_sdk_tutorial",
-    "short_name": "flutter_sdk_tutorial",
+    "name": "flutter_pubnub_chat",
+    "short_name": "flutter_pubnub_chat",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
