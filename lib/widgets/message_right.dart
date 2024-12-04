@@ -42,7 +42,7 @@ class MessageRight extends StatelessWidget {
                       getMessageTimeStamp(int.parse(message.timetoken)),
                       style: Theme.of(context)
                           .textTheme
-                          .caption!
+                          .bodySmall!
                           .apply(color: Colors.grey),
                     ),
                   ],
@@ -63,7 +63,7 @@ class MessageRight extends StatelessWidget {
                 ),
                 child: Text(
                   message.message,
-                  style: Theme.of(context).textTheme.bodyText2!.apply(
+                  style: Theme.of(context).textTheme.bodyMedium!.apply(
                         color: Colors.black87,
                       ),
                 ),

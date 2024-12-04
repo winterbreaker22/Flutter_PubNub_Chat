@@ -15,7 +15,7 @@ class MessageLeft extends StatelessWidget {
     final product = Provider.of<FriendlyNamesProvider>(context, listen: true);
     String sender = product.resolveFriendlyName(message.uuid);
     Color avatarColor = Theme.of(context).primaryColor;
-    TextStyle? fontStyle = Theme.of(context).textTheme.bodyText2;
+    TextStyle? fontStyle = Theme.of(context).textTheme.bodyMedium;
 
     return Container(
       margin: const EdgeInsets.only(top: 5),
@@ -72,7 +72,7 @@ class MessageLeft extends StatelessWidget {
                       getMessageTimeStamp(int.parse(message.timetoken)),
                       style: Theme.of(context)
                           .textTheme
-                          .caption!
+                          .bodySmall!
                           .apply(color: Colors.grey),
                     ),
                   ],
@@ -93,7 +93,7 @@ class MessageLeft extends StatelessWidget {
                 ),
                 child: Text(
                   message.message,
-                  style: Theme.of(context).textTheme.bodyText2!.apply(
+                  style: Theme.of(context).textTheme.bodyMedium!.apply(
                         color: Colors.black87,
                       ),
                 ),

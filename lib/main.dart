@@ -40,7 +40,7 @@ class MyApp extends StatelessWidget {
       child: MaterialApp(
         title: 'PubNub Flutter Chat',
         theme: ThemeData(
-            backgroundColor: Colors.blueGrey[50],
+            scaffoldBackgroundColor: Colors.blueGrey[50],
             appBarTheme: const AppBarTheme(
                 backgroundColor: Colors.white,
                 titleTextStyle: TextStyle(color: Colors.black12),
