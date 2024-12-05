@@ -9,4 +9,4 @@ const String pubnubSecretKey = "sec-c-MDIxMTc4NzYtYTgwZi00OTk5LTllNzgtMmE1MTVmOD
 const String chatChannelPrefix = "chat-"; // Dynamically create channels for users
 
 // User data (For simulation purposes)
-const String currentUserId = "user1";  // The current user ID
+const String currentUserId = "user-miguel";  // The current user ID

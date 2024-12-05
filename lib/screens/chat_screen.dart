@@ -14,7 +14,7 @@ class ChatScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final chatController = Get.put(ChatController('chat-${contact.userId}'));
+    final chatController = Get.put(ChatController('chat-${contact.userId}'), tag: 'chat-${contact.userId}');
 
     return Scaffold(
       appBar: AppBar(

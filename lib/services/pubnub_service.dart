@@ -14,6 +14,7 @@ class PubNubService {
         publishKey: pubnubPublishKey,
         subscribeKey: pubnubSubscribeKey,
         secretKey: pubnubSecretKey,
+        userId: const UserId(currentUserId),
       ),
     );
   }

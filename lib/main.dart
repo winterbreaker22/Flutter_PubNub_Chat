@@ -5,11 +5,17 @@ import 'package:get/get.dart';
 import 'screens/contacts_screen.dart';
 import 'services/pubnub_service.dart';
 import 'controllers/contact_controller.dart';
+import 'package:logger/logger.dart';
 
-void main() async {
+void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  await PubNubService.init();
-  runApp(const MyApp());
+  final logger = Logger();
+
+  PubNubService.init().then((_) {
+    runApp(const MyApp());
+  }).catchError((error) {
+    logger.e(error);
+  });
 }
 
 class MyApp extends StatelessWidget {
